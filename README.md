@@ -1,7 +1,7 @@
 
 # Python workshop
 
-A workshop dedicted to python providing tutorials, challenges and solutions. Covering topics such as numerical computing, just-in-time compilation, plotting, data analysis, and HPC.
+A workshop dedicated to python providing tutorials, challenges and solutions. Covering topics such as numerical computing, just-in-time compilation, plotting, data analysis, and HPC.
 
 
 ## Table of Content

@@ -21,18 +21,20 @@ $$
 where $G = 6.67\times10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ is the Gravitational constant and
 
 $$
-\mathbf{r}_{ij} = \mathbf{x}_j - \mathbf{x}_i
+\mathbf{r}_{ij} = \mathbf{x}_j - \mathbf{x}_i,
 $$
 
-is the distance vector between the two point masses and $|\mathbf{r}_{ij}|$ is the magnitude (i.e. distance norm).
-
-Using Netwon's second law, we can determine the acceleration experienced by particle $i$ due to all $j$ particles as follows:
+is the distance vector between the two point masses and $|\mathbf{r}_{ij}|$ is the magnitude (i.e. distance norm). Using Netwon's second law, we can determine the acceleration experienced by particle $i$ due to all $j$ particles as follows:
 
 $$
-\mathbf{a}_i = \frac{1}{m_i} \sum_j \mathbf{F}_{ij} = G \sum_i m_j\frac{\mathbf{r}_{ij}}{|\mathbf{r}_{ij}|^3}.
+\mathbf{a}_{i} = \frac{1}{m_i} \sum_j \mathbf{F}_{ij} = G \sum_i m_j\frac{\mathbf{r}_{ij}}{|\mathbf{r}_{ij}|^3}.
 $$
 
-**Note**: For stability reason, use a damping factor for $|\mathbf{r}_{ij}|$ to ensure denominator is non-zero, i.e., $|\mathbf{r}_{ij}| = \sqrt{(x_j-x_i)^2 + (y_j-y_i)^2 + \epsilon^2}$ with $\epsilon=10^{-1}$.
+**Note**: For stability reason, use a damping factor for $|\mathbf{r}_{ij}|$ to ensure denominator is non-zero, i.e.,
+
+$$
+|\mathbf{r}_{ij}| = \sqrt{(x_j-x_i)^2 + (y_j-y_i)^2 + \epsilon^2}
+$$
 
 ### Time integration
 
@@ -47,7 +49,7 @@ At each timestep $t_n$, the positions and the velocities of the particle are upd
 Total energy of the system is given as:
 
 $$
-E_{tot} = \frac{1}{2} \sum_i m_i |\mathbf{u}_i|^2 - G\sum_{1 \le i < j \le N} \frac{m_i m_j}{|\mathbf{r}_{ij}|},
+E_{tot} = \frac{1}{2} \sum_i m_i |\mathbf{u}_i|^2 - G\Sum_{1 \le i < j \le N} \frac{m_i m_j}{|\mathbf{r}_{ij}|},
 $$
 
 where the first-term is the kinetic energy, and second is the potential energy. Note for the potential energy only one interaction if calculated for each point mass pair.

@@ -18,6 +18,7 @@ T = T_1 + T_2 = \frac{1}{2} m_1 (\ddot{x}_1^2 + \ddot{y}_1^2) + \frac{1}{2} m_2 
 $$
 
 The total potential energy $V$ of the system is given as:
+
 $$
 V = V_1 + V_2 = m_1 g y_1 + m_2 g y_2
 $$

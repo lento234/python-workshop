@@ -7,8 +7,9 @@ The goal is to solve **atleast 1** of the challenges listed below:
 1. [Double pendulum](01_double_pendulum/README.md)
 2. [Machine learning for finance](02_ml_for_finance/README.md)
 3. [N-body simulation](03_nbody_simulation/README.md)
-4. [Shortest path along a cost map](04_shortest_path/README.md)
-5. **Or** you can define you own problem. We can go through it during workshop.
+4. [Shortest path](04_shortest_path/README.md)
+5. [Game of life](05_game_of_life/README.md)
+6. **or** you can define you own problem. We can go through it during workshop.
 
 ## You are expected to (at minimum)
 

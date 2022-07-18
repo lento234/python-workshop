@@ -3,19 +3,18 @@ channels:
   - conda-forge
   - pytorch
 dependencies:
-  # Minimum: 
-  - python=3.9
+  # Minimum:
+  - python=3.10
   - pip
   # Machine learning using Pytorch:
   - pytorch
   - torchvision
   - torchaudio
-  - cudatoolkit=10.2
   # Standard scientific:
   - pip:
-    - jupyterlab #==3.4.3
-    - matplotlib #==3.5.2
-    - numba #==0.55.2
-    - numpy #==1.22.0
-    - pandas #==1.4.3
-    - scipy #==1.8.1
+    - jupyterlab
+    - matplotlib
+    - numba
+    - numpy
+    - pandas
+    - scipy

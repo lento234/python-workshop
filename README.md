@@ -3,19 +3,24 @@
 
 A workshop dedicated to python providing tutorials, challenges and solutions. Covering topics such as numerical computing, just-in-time compilation, plotting, data analysis, and HPC.
 
-
 ## Table of Content
-
+- [Python workshop](#python-workshop)
+  - [Table of Content](#table-of-content)
+  - [Workshop outline](#workshop-outline)
+  - [Setup and installation](#setup-and-installation)
+  - [References](#references)
+    - [Installation and usage](#installation-and-usage)
+    - [Cheatsheet](#cheatsheet)
+  - [Tutorials](#tutorials)
+    - [Jupyter](#jupyter)
+    - [Scientific libraries](#scientific-libraries)
 
 ## Workshop outline
 
 1. [01_challenges](01_challenges/README.md): A list of challenges to help you get familiarize with python.
 2. [02_tutorials](02_tutorials/README.md)
 
-
-
 ## Setup and installation
-
 
 1. Install python (**python 3**) on your computer.
 

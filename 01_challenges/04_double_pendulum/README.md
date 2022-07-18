@@ -9,9 +9,9 @@ A [double pendulum](https://en.wikipedia.org/wiki/Double_pendulum) is a classic 
 * $\mathbf{x}_1 = (x_1, y_1) = L_1(\sin \theta_1, -\cos \theta_1)$
 * $\mathbf{x}_2 = (y_2, y_2) = (L_1 \sin \theta_1 + L_2 \sin \theta_2, -L_1 \cos \theta_1 - L_2 \cos \theta_2)$
 
-### Lagrangian
+### Equation of motion
 
-The Lagrangian is $L = T - V$. The kinetic energy ($T$) of the system is:
+The equation of motion for the double pendulum by looking at the Lagrangian of system. The Lagrangian is $L = T - V$. The kinetic energy ($T$) of the system is:
 
 $$
 T = T_1 + T_2 = \frac{1}{2} m_1 (\ddot{x}_1^2 + \ddot{y}_1^2) + \frac{1}{2} m_2 (\ddot{x}_2^2 + \ddot{y}_2^2)
@@ -28,9 +28,7 @@ $$
 L = (T_1 + T_2) - (V_1 + V_2)
 $$
 
-## Euler-Lagrange equation
-
-Solve the problem by using Euler-Lagrange equations:
+The equation of motion is derived by balancing the linear and angular momentum of the system, by using the Lagrange's equation:
 
 $$
 \frac{\partial L}{\partial \theta_1} - \frac{d}{dt}\frac{\partial L}{\partial \dot{\theta}_1} = 0 \\

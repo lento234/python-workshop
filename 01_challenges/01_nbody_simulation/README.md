@@ -13,12 +13,15 @@ A particle $p_i$ is defined by the following properties:
 ### Calculating force interactions
 
 The particle interact with each other by [Newton's law of universal gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). Each particle $p_j$ induce a force on particle $p_i$. The component of force induced by particle $j$ on $i$ is given as:
+
 $$
 \mathbf{F}_{ij} = G \sum_i \frac{m_i m_j}{|\mathbf{r}_{ij}|^2}\frac{\mathbf{r}_{ij}}{|\mathbf{r}_{ij}|},
 $$
+
 where $G = 6.67\times10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ is the Gravitational constant and $\mathbf{r}_{ij} = \mathbf{x}_i - \mathbf{x}_j$ is the distance vector between the two point masses and $|\mathbf{r}_{ij}|$ is the magnitude (i.e. distance norm).
 
 Using Netwon's second law, we can determine the acceleration experienced by particle $i$ due to all $j$ particles as follows:
+
 $$
 \mathbf{a}_i = \frac{1}{m_i} \sum_j \mathbf{F}_{ij} = G \sum_i m_j\frac{\mathbf{r}_{ij}}{|\mathbf{r}_{ij}|^3}.
 $$
@@ -36,9 +39,11 @@ At each timestep $t_n$, the positions and the velocities of the particle are upd
 ### Energy
 
 Total energy of the system is given as:
+
 $$
-E_{tot} = \frac{1}{2} \sum_i m_i |\mathbf{u}_i|^2 - G\sum_{1 \le i < j \le N} \frac{m_i m_j}{|\mathbf{r}_{ij}|}
+E_{tot} = \frac{1}{2} \sum_i m_i |\mathbf{u}_i|^2 - G\sum_{1 \le i < j \le N} \frac{m_i m_j}{|\mathbf{r}_{ij}|},
 $$
+
 where the first-term is the kinetic energy, and second is the potential energy. Note for the potential energy only one interaction if calculated for each point mass pair.
 
 

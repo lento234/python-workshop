@@ -11,7 +11,7 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
   - [References](#references)
     - [Installation and usage](#installation-and-usage)
     - [Cheatsheet](#cheatsheet)
-  - [Tutorials](#tutorials)
+    - [Tutorials](#tutorials)
     - [Jupyter](#jupyter)
     - [Scientific libraries](#scientific-libraries)
 
@@ -90,7 +90,7 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
 - [Numpy for matlab users](https://docs.scipy.org/doc/numpy/user/numpy-for-matlab-users.html)
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-## Tutorials
+### Tutorials
 
 - [Lecture series on scientific python by jrjohansson](https://github.com/jrjohansson/scientific-python-lectures)
 - [Python datascience handbook online series](https://jakevdp.github.io/PythonDataScienceHandbook/index.html)

@@ -49,7 +49,7 @@ At each timestep $t_n$, the positions and the velocities of the particle are upd
 Total energy of the system is given as:
 
 $$
-E_{tot} = \frac{1}{2} \sum_i m_i |\mathbf{u}_i|^2 - G\Sum_{1 \le i < j \le N} \frac{m_i m_j}{|\mathbf{r}_{ij}|},
+E_{tot} = \frac{1}{2} \sum_i m_i |\mathbf{u}_i|^2 - G\sum_{1 \le i < j \le N} \frac{m_i m_j}{|\mathbf{r}_{ij}|},
 $$
 
 where the first-term is the kinetic energy, and second is the potential energy. Note for the potential energy only one interaction if calculated for each point mass pair.

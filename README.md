@@ -24,32 +24,32 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
 
 1. Install python (**python 3**) on your computer.
 
-    From [miniconda](https://conda.io/miniconda.html) containing only the essentials such as the `conda` package  manager and `python`. (**Recommended**) 
-    
+    From [miniconda](https://conda.io/miniconda.html) containing only the essentials such as the `conda` package  manager and `python`. (**Recommended**)
+
     *or*
 
     From [anaconda distribution](https://www.anaconda.com/download/) containing all the necessary libaries for scientific research. Warning: very large, includes lots of conda packages by default.
-   
+
 2. Download this python tutorial github repository on to your computer.
 
     *Clone this `github` repository locally to you computer:*
-      
+
         $ git clone https://gitlab.empa.ch/305/python-workshop.git
-      
+
     *Change your directory to the tutorial folder:*
-      
+
         $ cd python-workshop
-   
+
 3. Create a new conda environment for this tutorial.
 
     *Option 1: Manually creating an environment*
 
         $ conda create --name py-workshop python=3.9 pip
-    
+
     *Option 2: Installing from the `yaml` file included in this repository:*
-    
+
         $ conda env create -f environment.yml
-    
+
 4. Activate the conda `py-workshop` environment.
 
         $ conda activate py-workshop
@@ -57,14 +57,14 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
 5. Installing additional packages if need into the conda environment using `pip`.
 
         $ pip install numpy numba matplotlib jupyterlab
-    
+
 6. Starting `JupyterLab` for working with notebooks.
 
         $ jupyter lab
 
 6. *(Cleanup)* Deactivate your environment when you are done.
 
-        $ conda deactivate 
+        $ conda deactivate
 
 7. *(Cleanup)* Removing your `py-workshop` environment if you don't want it anymore.
 

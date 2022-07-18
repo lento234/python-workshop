@@ -17,9 +17,8 @@ F_i = G \sum_i \frac{m_i m_j}{r^2}
 $$
 
 
-## References 
+## References
 
 **Warning: possible spoiler**
 
 - [https://medium.com/swlh/create-your-own-n-body-simulation-with-python-f417234885e9]
-

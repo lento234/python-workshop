@@ -1,6 +1,6 @@
 # Tutorials
 
-A brief overview of python for beginners to advanced users. These tutorials are intended to be self-learning. 
+A brief overview of python for beginners to advanced users. These tutorials are intended to be self-learning.
 
 
 ## Table of Content

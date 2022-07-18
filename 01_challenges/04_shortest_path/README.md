@@ -2,7 +2,7 @@
 
 ## Description
 
-Given a `risk map` consisting of integer values from 1 to 9, find the shortest path that will minimize the total cost from top-left to bottom-right. 
+Given a `risk map` consisting of integer values from 1 to 9, find the shortest path that will minimize the total cost from top-left to bottom-right.
 
 You start in the top left position, your destination is the bottom right position, and you **cannot move diagonally**. The number at each position is its risk level; to determine the total risk of an entire path, add up the risk levels of each position you enter (that is, don't count the risk level of your starting position unless you enter it; leaving it adds no risk to your total).
 

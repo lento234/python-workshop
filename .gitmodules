@@ -1,0 +1,9 @@
+[submodule "02_tutorials/collections/eth-cscs-summeruniversity2022"]
+	path = 02_tutorials/collections/eth-cscs-summeruniversity2022
+	url = https://github.com/eth-cscs/SummerUniversity2022
+[submodule "02_tutorials/collections/thealgorithms-python"]
+	path = 02_tutorials/collections/thealgorithms-python
+	url = https://github.com/TheAlgorithms/Python
+[submodule "02_tutorials/collections/jakevdp-pythondatasciencehandbook"]
+	path = 02_tutorials/collections/jakevdp-pythondatasciencehandbook
+	url = https://github.com/jakevdp/PythonDataScienceHandbook

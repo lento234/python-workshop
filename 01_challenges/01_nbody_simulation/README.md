@@ -21,7 +21,7 @@ $$
 where $G = 6.67\times10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ is the Gravitational constant and
 
 $$
-\mathbf{r}_{ij} = \mathbf{x}_i - \mathbf{x}_j
+\mathbf{r}_{ij} = \mathbf{x}_j - \mathbf{x}_i
 $$
 
 is the distance vector between the two point masses and $|\mathbf{r}_{ij}|$ is the magnitude (i.e. distance norm).

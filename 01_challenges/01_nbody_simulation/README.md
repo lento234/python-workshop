@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a classic gravitational n-body simulation problem. The goal is to simulate the graviational interaction of a system of particles $p_i\in P$ where $i=[0,1,...,N]$.
+This is a classic gravitational n-body simulation problem. The goal is to simulate the graviational interaction of a system of particles $p_i\in P$ where $i=[1, 2, ...,N]$.
 
 A particle $p_i$ is defined by the following properties:
 
@@ -18,7 +18,13 @@ $$
 \mathbf{F}_{ij} = G \sum_i \frac{m_i m_j}{|\mathbf{r}_{ij}|^2}\frac{\mathbf{r}_{ij}}{|\mathbf{r}_{ij}|},
 $$
 
-where $G = 6.67\times10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ is the Gravitational constant and $\mathbf{r}_{ij} = \mathbf{x}_i - \mathbf{x}_j$ is the distance vector between the two point masses and $|\mathbf{r}_{ij}|$ is the magnitude (i.e. distance norm).
+where $G = 6.67\times10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ is the Gravitational constant and
+
+$$
+\mathbf{r}_{ij} = \mathbf{x}_i - \mathbf{x}_j
+$$
+
+is the distance vector between the two point masses and $|\mathbf{r}_{ij}|$ is the magnitude (i.e. distance norm).
 
 Using Netwon's second law, we can determine the acceleration experienced by particle $i$ due to all $j$ particles as follows:
 

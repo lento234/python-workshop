@@ -12,6 +12,7 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
     - [Installation and usage](#installation-and-usage)
     - [Cheatsheet](#cheatsheet)
     - [Tutorials](#tutorials)
+    - [Python tutorials](#python-tutorials)
     - [Jupyter](#jupyter)
     - [Scientific libraries](#scientific-libraries)
 
@@ -101,6 +102,11 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
 - [Quantitative Big Imaging 2019 by Kevin Mader (ETHZ)](https://github.com/kmader/Quantitative-Big-Imaging-2019)
 - [Dask examples tutorial](https://github.com/dask/dask-examples)
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+
+### Python tutorials
+
+- [Mr. P Solver](https://www.youtube.com/c/MrPSolver): Python tutorials
+
 
 ### Jupyter
 

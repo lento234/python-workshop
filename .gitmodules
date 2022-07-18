@@ -7,3 +7,18 @@
 [submodule "02_tutorials/collections/jakevdp-pythondatasciencehandbook"]
 	path = 02_tutorials/collections/jakevdp-pythondatasciencehandbook
 	url = https://github.com/jakevdp/PythonDataScienceHandbook
+[submodule "02_tutorials/collections/dask-dask-tutorials"]
+	path = 02_tutorials/collections/dask-dask-tutorials
+	url = https://github.com/dask/dask-tutorial
+[submodule "02_tutorials/collections/numpy-numpy-tutorials"]
+	path = 02_tutorials/collections/numpy-numpy-tutorials
+	url = https://github.com/numpy/numpy-tutorials
+[submodule "02_tutorials/collections/jupyter-widgets-tutorial"]
+	path = 02_tutorials/collections/jupyter-widgets-tutorial
+	url = https://github.com/jupyter-widgets/tutorial
+[submodule "02_tutorials/collections/jrjohansson-scientific-python-lectures"]
+	path = 02_tutorials/collections/jrjohansson-scientific-python-lectures
+	url = https://github.com/jrjohansson/scientific-python-lectures
+[submodule "02_tutorials/collections/eth-cscs-pythonhpc"]
+	path = 02_tutorials/collections/eth-cscs-pythonhpc
+	url = https://github.com/eth-cscs/PythonHPC

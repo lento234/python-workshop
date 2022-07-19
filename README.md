@@ -19,7 +19,8 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
 ## Workshop outline
 
 1. [01_challenges](01_challenges/README.md): A list of challenges to help you get familiarize with python.
-2. [02_tutorials](02_tutorials/README.md)
+2. [02_tutorials](02_tutorials/README.md): A collection of tutorials and crash-course into numerical computing with python.
+3. [03_solutions](03_solutions/README.md): Hints and solutions (TBD) to all the challenges.
 
 ## Setup and installation
 
@@ -35,43 +36,47 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
 
     *Clone this `github` repository locally to you computer:*
 
-        $ git clone https://gitlab.empa.ch/305/python-workshop.git
+        git clone https://github.com/lento234/python-workshop.git
 
     *Change your directory to the tutorial folder:*
 
-        $ cd python-workshop
+        cd python-workshop
 
-3. Create a new conda environment for this tutorial.
+3. *(Optional)*: Recursively clone tutorial collection repositories.
+
+        git submodule update --init --recursive
+
+4. Create a new conda environment for this tutorial.
 
     *Option 1: Manually creating an environment*
 
-        $ conda create --name python-workshop python=3.10 pip
+        conda create --name python-workshop python=3.10 pip
 
     *Option 2: Installing from the `yaml` file included in this repository:*
 
-        $ conda env create -f environment.yml
+        conda env create -f environment.yml
 
-4. Activate the conda `python-workshop` environment.
+5. Activate the conda `python-workshop` environment.
 
-        $ conda activate python-workshop
+        conda activate python-workshop
 
-5. *(Optional)*: Installing additional packages if need into the conda environment using `pip`.
+6. *(Optional)*: Installing additional packages if need into the conda environment using `pip`.
 
-        $ pip install numpy numba matplotlib jupyterlab
+        pip install numpy numba matplotlib jupyterlab
 
-6. Starting `JupyterLab` for working with notebooks.
+7. Starting `JupyterLab` for working with notebooks.
 
-        $ jupyter lab
+        jupyter lab
 
-6. Deactivate your environment when you are done.
+8. Deactivate your environment when you are done.
 
-        $ conda deactivate
+        conda deactivate
 
-7. *(Optional)*: Removing your `python-workshop` environment if you don't want it anymore.
+9. *(Optional)*: Removing your `python-workshop` environment if you don't want it anymore.
 
     *You can delete the environment by using the following in a terminal prompt:*
 
-        $ conda env remove --name python-workshop --yes
+        conda env remove --name python-workshop --yes
 
 
 ## References

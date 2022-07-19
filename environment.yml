@@ -1,4 +1,4 @@
-name: py-workshop
+name: python-workshop
 channels:
   - conda-forge
   - pytorch

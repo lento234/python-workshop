@@ -45,17 +45,17 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
 
     *Option 1: Manually creating an environment*
 
-        $ conda create --name py-workshop python=3.9 pip
+        $ conda create --name python-workshop python=3.10 pip
 
     *Option 2: Installing from the `yaml` file included in this repository:*
 
         $ conda env create -f environment.yml
 
-4. Activate the conda `py-workshop` environment.
+4. Activate the conda `python-workshop` environment.
 
-        $ conda activate py-workshop
+        $ conda activate python-workshop
 
-5. Installing additional packages if need into the conda environment using `pip`.
+5. *(Optional)*: Installing additional packages if need into the conda environment using `pip`.
 
         $ pip install numpy numba matplotlib jupyterlab
 
@@ -63,15 +63,15 @@ A workshop dedicated to python providing tutorials, challenges and solutions. Co
 
         $ jupyter lab
 
-6. *(Cleanup)* Deactivate your environment when you are done.
+6. Deactivate your environment when you are done.
 
         $ conda deactivate
 
-7. *(Cleanup)* Removing your `py-workshop` environment if you don't want it anymore.
+7. *(Optional)*: Removing your `python-workshop` environment if you don't want it anymore.
 
     *You can delete the environment by using the following in a terminal prompt:*
 
-        $ conda env remove --name py-workshop --yes
+        $ conda env remove --name python-workshop --yes
 
 
 ## References

@@ -9,7 +9,6 @@ List of challenges:
 3. [Shortest path](03_shortest_path/README.md)
 4. [Double pendulum](04_double_pendulum/README.md)
 5. [Machine learning kaggle challenge](05_machine_learning_kaggle_challenge/README.md)
-
 6. **or** you can define you own problem. We can go through it during workshop.
 
 ## You are expected to (at minimum)

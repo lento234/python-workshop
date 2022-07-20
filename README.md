@@ -1,7 +1,9 @@
 
 <div align="center">
 
-# **Python workshop**
+![logo](assets/logo.svg)
+
+# **PYTHON WORKSHOP**
 
 ![License](https://img.shields.io/github/license/lento234/cv?style=flat-square&color=blue&labelColor=000000)
 

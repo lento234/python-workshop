@@ -1,5 +1,11 @@
 
-# Python workshop
+<div align="center">
+
+# **Python workshop**
+
+![License](https://img.shields.io/github/license/lento234/cv?style=flat-square&color=blue&labelColor=000000)
+
+</div>
 
 A workshop dedicated to python providing tutorials, challenges and solutions. Covering topics such as numerical computing, just-in-time compilation, plotting, data analysis, and HPC.
 

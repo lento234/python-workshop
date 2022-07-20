@@ -22,3 +22,9 @@
 [submodule "02_tutorials/collections/eth-cscs-pythonhpc"]
 	path = 02_tutorials/collections/eth-cscs-pythonhpc
 	url = https://github.com/eth-cscs/PythonHPC
+[submodule "02_tutorials/collections/lento234-python-tutorial"]
+	path = 02_tutorials/collections/lento234-python-tutorial
+	url = https://github.com/lento234/python-tutorial
+[submodule "02_tutorials/collections/lento234-ml-tutorials"]
+	path = 02_tutorials/collections/lento234-ml-tutorials
+	url = https://github.com/lento234/ml-tutorials

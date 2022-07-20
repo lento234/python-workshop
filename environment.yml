@@ -11,10 +11,11 @@ dependencies:
   - torchvision
   - torchaudio
   # Standard scientific:
-  - pip:
-    - jupyterlab
-    - matplotlib
-    - numba
-    - numpy
-    - pandas
-    - scipy
+  - jupyterlab
+  - matplotlib
+  - numba
+  - numpy
+  - openpyxl
+  - pandas
+  - pytables
+  - scipy

@@ -28,3 +28,9 @@
 [submodule "02_tutorials/collections/lento234-ml-tutorials"]
 	path = 02_tutorials/collections/lento234-ml-tutorials
 	url = https://github.com/lento234/ml-tutorials
+[submodule "02_tutorials/collections/lightning-ai-tutorials"]
+	path = 02_tutorials/collections/lightning-ai-tutorials
+	url = https://github.com/Lightning-AI/tutorials
+[submodule "02_tutorials/collections/pytorch-tutorials"]
+	path = 02_tutorials/collections/pytorch-tutorials
+	url = https://github.com/pytorch/tutorials

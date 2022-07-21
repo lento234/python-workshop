@@ -10,7 +10,7 @@ Implement a [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Gam
 
 ## Challenge
 
-Implement using any numerical library such as `numpy` and visualize the states at each iteration using `matplotlib` and export the animation to `mp4` or `gif`. *Optionally: You may use other libary of choice (e.g. `numba`, `pytorch`, `taichi`, ...)*. Use the following initial conditions for your simulation:
+Implement using any numerical library such as `numpy` and visualize the states at each iteration using `matplotlib` and export the animation to `mp4` or `gif`. *Optionally: You may use other library of choice (e.g. `numba`, `pytorch`, `taichi`, ...)*. Use the following initial conditions for your simulation:
 
 * Image size: 512 x 512 px
 * Initial probability of a cell to be `alive`: 15%

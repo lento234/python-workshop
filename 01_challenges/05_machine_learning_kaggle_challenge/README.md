@@ -29,7 +29,7 @@ If successful, you'll help create a better customer experience for cardholders b
 
 ## Evaluation
 
-The evaluation metric, $M$, for this competition is the mean of two measures of rank ordering: Normalized Gini Coefficient, $G$, and default rate captured at 4%, $D$.
+The evaluation metric, $M$, for this competition is the mean of two measures of rank ordering: Normalized Gini Coefficient, $G$, and default rate captured at $4\%$, $D$.
 
 $$
 M = 0.5 \cdot (G+D)
@@ -51,14 +51,14 @@ Python code for calculating this metric can be found in [this Notebook](https://
 
 3. Upload the prediction using the following format:
 
-```
-customer_ID,prediction
-00000469ba...,0.01
-00001bf2e7...,0.22
-0000210045...,0.98
-etc.
-```
+    ```
+    customer_ID,prediction
+    00000469ba...,0.01
+    00001bf2e7...,0.22
+    0000210045...,0.98
+    etc.
+    ```
 
-4. Your uploaded file and code will be evaluated using the evaulation metric $M$.
+4. Your uploaded file and code will be evaluated using the evaluation metric $M$.
 
-4. See you score on the [leaderboard](https://www.kaggle.com/competitions/amex-default-prediction/leaderboard).
+5. See you score on the [leaderboard](https://www.kaggle.com/competitions/amex-default-prediction/leaderboard).

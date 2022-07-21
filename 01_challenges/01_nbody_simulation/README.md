@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a classic gravitational n-body simulation problem. The goal is to simulate the graviational interaction of a system of particles $p_i\in P$ where $i=[1, 2, ...,N]$.
+This is a classic gravitational n-body simulation problem. The goal is to simulate the gravitational interaction of a system of particles $p_i\in P$ where $i=[1, 2, ...,N]$.
 
 A particle $p_i$ is defined by the following properties:
 
@@ -18,13 +18,13 @@ $$
 \mathbf{F}_{ij} = G \sum_i \frac{m_i m_j}{|\mathbf{r}_{ij}|^2}\frac{\mathbf{r}_{ij}}{|\mathbf{r}_{ij}|},
 $$
 
-where $G = 6.67\times10^{-11}$ m$^3$ kg$^{-1}$ s$^{-2}$ is the Gravitational constant and
+where $G$ m$^3$ kg$^{-1}$ s$^{-2}$ is the Gravitational constant and
 
 $$
 \mathbf{r}_{ij} = \mathbf{x}_j - \mathbf{x}_i,
 $$
 
-is the distance vector between the two point masses and $|\mathbf{r}_{ij}|$ is the magnitude (i.e. distance norm). Using Netwon's second law, we can determine the acceleration experienced by particle $i$ due to all $j$ particles as follows:
+is the distance vector between the two point masses and $|\mathbf{r}_{ij}|$ is the magnitude (i.e. distance norm). Using Newton's second law, we can determine the acceleration experienced by particle $i$ due to all $j$ particles as follows:
 
 $$
 \mathbf{a}_{i} = \frac{1}{m_i} \sum_j \mathbf{F}_{ij} = G \sum_i m_j\frac{\mathbf{r}_{ij}}{|\mathbf{r}_{ij}|^3}.
@@ -38,7 +38,7 @@ $$
 
 ### Time integration
 
-At each timestep $t_n$, the positions and the velocities of the particle are updated. For n-body simulation, a [Leapfrog integration](https://en.wikipedia.org/wiki/Leapfrog_integration) scheme is used a second-order accurate time integration. The evolution consists of:
+At each time step $t_n$, the positions and the velocities of the particle are updated. For n-body simulation, a [Leapfrog integration](https://en.wikipedia.org/wiki/Leapfrog_integration) scheme is used a second-order accurate time integration. The evolution consists of:
 
 1. Half-update of velocity: $\mathbf{u_i} = \mathbf{u_i} + \mathbf{a_i}\frac{\Delta t}{2}$
 2. Full-update of position: $\mathbf{x_i} = \mathbf{x_i} + \mathbf{v_i}\Delta t$

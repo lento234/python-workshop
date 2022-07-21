@@ -34,3 +34,6 @@
 [submodule "02_tutorials/collections/pytorch-tutorials"]
 	path = 02_tutorials/collections/pytorch-tutorials
 	url = https://github.com/pytorch/tutorials
+[submodule "02_tutorials/collections/rougier-matplotlib-tutorial"]
+	path = 02_tutorials/collections/rougier-matplotlib-tutorial
+	url = https://github.com/rougier/matplotlib-tutorial

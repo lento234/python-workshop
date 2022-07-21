@@ -52,7 +52,7 @@ $$
 E_{tot} = \frac{1}{2} \sum_i m_i |\mathbf{u}_i|^2 - G\sum_{1 \le i < j \le N} \frac{m_i m_j}{|\mathbf{r}_{ij}|},
 $$
 
-where the first-term is the kinetic energy, and second is the potential energy. Note for the potential energy only one interaction if calculated for each point mass pair.
+where the first-term is the kinetic energy, and second is the potential energy. Note for the potential energy only one interaction is calculated for each point mass pair.
 
 
 ## Challenge

@@ -59,7 +59,7 @@ where the first-term is the kinetic energy, and second is the potential energy. 
 
 Use `numpy` or `numba` to implement the n-body interaction and time integration. Visualize using `matplotlib`.
 
-1. Simulate a 2D n-body problem from $t=0$ with random **Gaussian** distribution of velocity and position of $N=100$ particles. Assume, $G=1.0$, $dt=0.01$, $\epsilon=0.1$ and $m_i=20$. Simulate for 1000 iteration till $t=10$.
+1. Simulate a 2D n-body problem from $t=0$ with random **Gaussian** distribution of velocity and position of $N=100$ particles. Assume, $G=1.0$, $dt=0.01$, $\epsilon=0.1$ and $\sum m_i=20$. Simulate for 1000 iteration till $t=10$. Note, if you can have relative reference frame, if you have zero mean total momentum.
 2. Visualize the motion of the particles using matplotlib. Same every 10th frame and convert to an animation using matplotlib.
 3. *Optional*: Plot the evolution of kinetic, potential and total energy of the system.
 4. *Optional*: Extend the problem to 3D and visualize. Play around with larger number of particles

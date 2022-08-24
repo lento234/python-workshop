@@ -1,10 +1,9 @@
 import numpy as np
 from tqdm import tqdm
-from numba import jit, prange
 import matplotlib.pyplot as plt
-plt.ion()
 
-np.random.seed(234)
+plt.ion() # Interactive on
+np.random.seed(234) # RNG seed
 
 class Nbody:
     def __init__(self, N, m, dt, G=1.0, epsilon=0.1, d=2):

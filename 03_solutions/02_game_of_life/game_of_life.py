@@ -9,11 +9,15 @@ grid_size = 64
 init_prob = 0.9 # 15 %
 steps = 10000
 plot_freq = 1
+
+# Initilize
 grid = (np.random.rand(grid_size, grid_size) > init_prob).astype('uint8')
 
-stencil = np.array([[1, 1, 1],
-                    [1, 0, 1],
-                    [1, 1, 1]])
+stencil = np.array([
+    [1, 1, 1], 
+    [1, 0, 1], 
+    [1, 1, 1]
+])
 
 def update(grid, stencil, mode='wrap'):
     neigbors = scipy.ndimage.convolve(grid, stencil, mode=mode)
@@ -41,8 +45,7 @@ for i in range(steps):
     # Update state
     grid = update(grid, stencil)
     # Update plot
-    if i % plot_freq == 0:
+    if plt.fignum_exists(fig.number) and i % plot_freq == 0:
         update_plot(ax, grid, i)
-
-
-plt.waitforbuttonpress()
+    else:
+        break

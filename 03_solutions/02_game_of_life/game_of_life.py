@@ -45,7 +45,7 @@ for i in range(steps):
     # Update state
     grid = update(grid, stencil)
     # Update plot
-    if plt.fignum_exists(fig.number) and i % plot_freq == 0:
+    if not plt.fignum_exists(fig.number): break
+    if i % plot_freq == 0:
         update_plot(ax, grid, i)
-    else:
-        break
+    

@@ -140,6 +140,8 @@ def main():
             update_plot(
                 axes, t=nbody.t, x=nbody.x, x_hist=x_hist, E=nbody.E,
             )
+        elif not plt.fignum_exists(fig.number):
+            break
 
 
 if __name__ == "__main__":

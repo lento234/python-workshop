@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 plt.ion() # Interactive on
 np.random.seed(234) # RNG seed
 
-def update(grid, stencil, mode='reflect'):
+def update(grid, stencil, mode='wrap'):
     """State update function using `scipy.ndimage.convolve` method.
 
     Args:
@@ -27,7 +27,7 @@ def main():
     # Initial conditions
     grid_size = 128
     init_prob = 0.85 # 80 %
-    
+
     # Runtime options
     steps = 3000
     plot_freq = 1
@@ -35,14 +35,13 @@ def main():
     # Initilize field
     grid = (np.random.rand(grid_size, grid_size) > init_prob).astype('uint8')
 
-    # Neighborhood stencil 
+    # Neighborhood stencil
     stencil = np.array([
-        [1, 1, 1], 
-        [1, 0, 1], 
+        [1, 1, 1],
+        [1, 0, 1],
         [1, 1, 1]
     ])
 
-    
     # Setup plot
     fig = plt.figure(figsize=(6,6), dpi=80)
     ax = plt.gca()
@@ -50,17 +49,21 @@ def main():
     for i in range(steps):
         # Update state
         grid = update(grid, stencil)
-        # Update plot
         if not plt.fignum_exists(fig.number):
+            # Stop if figure closed
             break
         elif i % plot_freq == 0:
+            # Update plot
             ax.cla()
             ax.imshow(grid, cmap='gray_r')
-            ax.text(0.85, 0.02, f'step {i:04d}', transform=ax.transAxes)
-            ax.set_xticklabels([])
-            ax.set_yticklabels([])
+            ax.text(0.9175, 0.02, f'{i:04d}',
+                    weight='bold',
+                    bbox=dict(facecolor='white', alpha=0.8),
+                    transform=ax.transAxes)
+            ax.set_xticks([])
+            ax.set_yticks([])
             plt.tight_layout()
-            plt.pause(0.0001) # wait
-    
+            plt.pause(0.0001) # wait to draw
+
 if __name__ == "__main__":
     main()

@@ -16,7 +16,7 @@ A [double pendulum](https://en.wikipedia.org/wiki/Double_pendulum) is a classic 
 The equation of motion for the double pendulum by looking at the Lagrangian of system. The Lagrangian is $L = T - V$. The kinetic energy ($T$) of the system is:
 
 $$
-T = T_1 + T_2 = \frac{1}{2} m_1 (\ddot{x}_1^2 + \ddot{y}_1^2) + \frac{1}{2} m_2 (\ddot{x}_2^2 + \ddot{y}_2^2)
+T = T_1 + T_2 = \frac{1}{2} m_1 (\dot{x}_1^2 + \dot{y}_1^2) + \frac{1}{2} m_2 (\dot{x}_2^2 + \dot{y}_2^2)
 $$
 
 The total potential energy $V$ of the system is given as:

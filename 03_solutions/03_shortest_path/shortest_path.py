@@ -1,10 +1,12 @@
 import heapq
 import numpy as np
+import numba
 import matplotlib.pyplot as plt
 
 np.random.seed(234)
 plt.ion()
 
+numba.jit(nopython=True)
 def find_neighbors(p, nrows, ncols):
     row, col = p
     neighbors = []
@@ -18,15 +20,14 @@ def find_neighbors(p, nrows, ncols):
         neighbors.append((row, col + 1))
     return neighbors
 
+numba.jit(nopython=True)
 def trace_path(p, start, prev_map):
     p_cur = p
     shortest_path = [p_cur]
     while p_cur != start:
         p_cur = tuple(prev_map[p_cur[0], p_cur[1]])
         shortest_path.append(p_cur)
-
     return np.asarray(shortest_path)[::-1].T
-
 
 def find_shortest_path(map, start=(0, 0), dest=None):
     # Graph attributes
@@ -55,9 +56,6 @@ def find_shortest_path(map, start=(0, 0), dest=None):
 
         if p == dest:
             break
-
-        # if p in visited_nodes:
-        #     continue
 
         visited_nodes.add(p)
 
@@ -103,7 +101,6 @@ def main():
 
     # Find shortest path
     dist_map, shortest_path = find_shortest_path(map, start=(0,0))
-    print(len(dist_map), len(shortest_path))
 
     # Animate
     fig, ax = plt.subplots()

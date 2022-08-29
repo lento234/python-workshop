@@ -25,7 +25,7 @@ def update(grid, stencil, mode='wrap'):
 
 def main():
     # Initial conditions
-    grid_size = 128
+    grid_size = 64
     init_prob = 0.85 # 80 %
 
     # Runtime options
@@ -55,7 +55,7 @@ def main():
         elif i % plot_freq == 0:
             # Update plot
             ax.cla()
-            ax.imshow(grid, cmap='gray_r')
+            ax.matshow(grid, cmap='gray_r')
             ax.text(0.9175, 0.02, f'{i:04d}',
                     weight='bold',
                     bbox=dict(facecolor='white', alpha=0.8),
@@ -63,7 +63,7 @@ def main():
             ax.set_xticks([])
             ax.set_yticks([])
             plt.tight_layout()
-            plt.pause(0.0001) # wait to draw
+            plt.pause(0.01) # wait to draw
 
 if __name__ == "__main__":
     main()

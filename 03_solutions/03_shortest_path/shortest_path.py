@@ -1,12 +1,10 @@
 import heapq
 import numpy as np
-import numba
 import matplotlib.pyplot as plt
 
 np.random.seed(234)
 plt.ion()
 
-numba.jit(nopython=True)
 def find_neighbors(p, nrows, ncols):
     row, col = p
     neighbors = []
@@ -20,17 +18,15 @@ def find_neighbors(p, nrows, ncols):
         neighbors.append((row, col + 1))
     return neighbors
 
-numba.jit(nopython=True)
-def trace_path(p, start, prev_map):
+def trace_path(prev, start, p):
     p_cur = p
     shortest_path = [p_cur]
     while p_cur != start:
-        p_cur = tuple(prev_map[p_cur[0], p_cur[1]])
+        p_cur = tuple(prev[p_cur[0], p_cur[1]])
         shortest_path.append(p_cur)
     return np.asarray(shortest_path)[::-1].T
 
 def find_shortest_path(map, start=(0, 0), dest=None):
-    # Graph attributes
     nrows, ncols = map.shape
 
     if dest is None:
@@ -59,23 +55,21 @@ def find_shortest_path(map, start=(0, 0), dest=None):
 
         visited_nodes.add(p)
 
-        # Find neighbor ravel idx
-        neighbors = find_neighbors(p, nrows, ncols)
+        # Travel to all neighbors
+        for p_nbr in find_neighbors(p, nrows, ncols):
+            new_dist = dist[p] + map[p_nbr]
 
-        for row_nbr, col_nbr in neighbors:
-            new_dist = dist[p] + map[row_nbr, col_nbr]
+            if new_dist < dist[p_nbr]:
+                dist[p_nbr] = new_dist
+                heapq.heappush(queue, (new_dist, p_nbr))
+                prev[p_nbr] = p
 
-            if new_dist < dist[row_nbr, col_nbr]:
-                dist[row_nbr, col_nbr] = new_dist
-                heapq.heappush(queue, (new_dist, (row_nbr, col_nbr)))
-                prev[row_nbr, col_nbr] = p
-
-        # Find shortest path
+        # Find shortest paths
         dist_snapshots.append(np.copy(dist))
-        shortest_path_snapshots.append(trace_path(p, start, prev))
+        shortest_path_snapshots.append(trace_path(prev, start, p))
 
-    # Final
-    shortest_path_snapshots.append(trace_path(dest, start, prev))
+    # Final path
+    shortest_path_snapshots.append(trace_path(prev, start, p))
 
     return dist_snapshots, shortest_path_snapshots
 

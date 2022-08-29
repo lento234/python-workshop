@@ -136,13 +136,9 @@ def main():
         x_hist[i % N_hist] = nbody.x
 
         # Plot
+        if not plt.fignum_exists(fig.number): break
         if i % plot_freq == 0:
-            update_plot(
-                axes, t=nbody.t, x=nbody.x, x_hist=x_hist, E=nbody.E,
-            )
-        elif not plt.fignum_exists(fig.number):
-            break
-
+            update_plot(axes, t=nbody.t, x=nbody.x, x_hist=x_hist, E=nbody.E)
 
 if __name__ == "__main__":
     main()

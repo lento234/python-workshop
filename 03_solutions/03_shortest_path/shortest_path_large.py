@@ -1,4 +1,5 @@
 import heapq
+import os
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -26,7 +27,7 @@ def main():
     plot_freq = 50
 
     # Open file
-    with open("map.txt", "r") as f:
+    with open(os.path.join(os.path.dirname(__file__), "map.txt"), "r") as f:
         map = np.array([list(line.strip()) for line in f.readlines()], dtype="uint8")
 
     # Find shortest path

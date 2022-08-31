@@ -17,7 +17,8 @@ def plot(ax, map, dist, shortest_path, i):
     cur_dist[cur_dist == np.iinfo(dist[i].dtype).max] = np.nan
     ax.imshow(map)
     ax.imshow(cur_dist, vmin=dist[-1].min(), vmax=dist[-1].max())
-    ax.contour(np.isnan(cur_dist), levels=[0.5], colors="w", linewidths=[2])
+    if i >= 0:
+        ax.contour(np.isnan(cur_dist), levels=[0.5], colors="w", linewidths=[2])
     ax.plot(shortest_path[i][0], shortest_path[i][1], c="tab:red", lw=2)
     ax.axis("off")
     plt.pause(0.0001)
